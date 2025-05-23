@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de produtos</title>
+</head>
+<style>
+</style>
+
+
+<body>
+    <form id="formulario" style="display: flex; flex-direction: column; max-width: 768px; margin:5rem auto; gap: .7rem;">
+        <label for="nome">Nome do Produto:</label>
+        <input id="nome" type="text">
+        <label for="preco">Preço:</label>
+        <input id="preco" type="number">
+        <label for="categoria">Categoria</label>
+        <select id="categoria">
+            <option value="tecnologia">Tecnologia</option>
+            <option value="alimentos">Alimentos</option>
+            <option value="roupas">Roupas</option>
+        </select>
+        <button id="btnCadastrar">Cadastrar</button>
+    </form>
+
+    <p id="error" style="color: red;"></p>
+    <div id="produtos" style="max-width: 768px; margin: auto;">
+
+    </div>
+    <script src="./app.js"></script>
+</body>
+
+</html>
